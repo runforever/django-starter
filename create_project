@@ -1,0 +1,37 @@
+#!/bin/sh
+
+starter_dir="/tmp/django-starter-template"
+starter_requirements="$starter_dir/requirements"
+starter_project_tools="$starter_dir/project_tools/*"
+starter_source="$starter_dir/source/*"
+starter_gitignore="$starter_dir/gitignore.example"
+starter_drf_settings="$starter_dir/drf_settings.py"
+
+project_dir="/code/$1"
+project_source="$project_dir/$1"
+project_origin_settings="$project_source/settings.py"
+project_settings_dir="$project_source/settings"
+project_gitignore="$project_dir/.gitignore"
+
+# clone django starter template
+echo "clone django starter template"
+git clone https://github.com/runforever/django-starter-template.git $starter_dir
+
+# create project
+echo "create project"
+cd /code && django-admin.py startproject $1
+
+# copy file
+echo "copy file"
+cp -r $starter_requirements $project_dir
+cp -r $starter_project_tools $project_dir
+cp -r $starter_source $project_source
+cp $starter_gitignore $project_gitignore
+
+# add drf settings
+echo "add drf settings"
+cat $starter_drf_settings >> $project_origin_settings
+
+# adjust file dir
+echo "change settings dir"
+mv $project_origin_settings $project_settings_dir
