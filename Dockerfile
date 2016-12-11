@@ -7,3 +7,5 @@ ADD requirements.txt /code
 RUN pip install -r requirements.txt -i https://pypi.mirrors.ustc.edu.cn/simple
 ADD create_project /bin
 RUN chmod +x /bin/create_project
+RUN mkdir -p /root/.pip
+ADD pip.conf /root/.pip
