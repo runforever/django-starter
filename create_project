@@ -15,7 +15,10 @@ project_gitignore="$project_dir/.gitignore"
 
 # clone django starter template
 echo "clone django starter template"
-git clone https://github.com/runforever/django-starter-template.git $starter_dir
+git clone https://github.com/runforever/django-starter-template.git $starter_dir 
+
+echo "checkout 2.7.13 version"
+cd $starter_dir && git checkout 2.7.13
 
 # create project
 echo "create project"
