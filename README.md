@@ -1,16 +1,42 @@
 # Django Starter
 
 ## Description
-使用 docker 来搭建 python 3.5.2、django、django restframework 开发环境。
+使用 docker 来搭建 python 3.6.2、django、django restframework 开发环境。
 
 依赖
 ```
-Django==1.10.4
-django-cors-headers==1.3.1
-django-nose==1.4.4
-djangorestframework==3.5.3
-djangorestframework-jwt==1.9.0
-raven==5.26.0
+certifi==2017.7.27.1
+chardet==3.0.4
+circus==0.14.0
+contextlib2==0.5.5
+coreapi==2.3.1
+coreschema==0.0.4
+Django==1.11.4
+django-cors-headers==2.1.0
+django-nose==1.4.5
+django-rest-swagger==2.1.2
+djangorestframework==3.6.4
+djangorestframework-jwt==1.11.0
+idna==2.6
+iowait==0.2
+itypes==1.1.0
+Jinja2==2.9.6
+MarkupSafe==1.0
+mysqlclient==1.3.10
+nose==1.3.7
+openapi-codec==1.3.2
+psutil==5.2.2
+psycopg2==2.7.3.1
+PyJWT==1.5.2
+pytz==2017.2
+pyzmq==16.0.2
+raven==6.1.0
+requests==2.18.4
+simplejson==3.11.1
+tornado==4.5.2
+uritemplate==3.0.0
+urllib3==1.22
+uWSGI==2.0.15
 ```
 
 ## Usage
