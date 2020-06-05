@@ -4,7 +4,7 @@ circus==0.14.0
 contextlib2==0.5.5
 coreapi==2.3.1
 coreschema==0.0.4
-Django==1.11.4
+Django==1.11.29
 django-cors-headers==2.1.0
 django-nose==1.4.5
 django-rest-swagger==2.1.2
